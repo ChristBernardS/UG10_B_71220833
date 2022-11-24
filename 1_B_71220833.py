@@ -8,7 +8,7 @@ pilihan = int(input('Masukkan pilihan anda: '))
 if pilihan == 1:
     panjang = int(input('Masukkan panjang sisi alas limas: '))
     tinggi = int(input('Masukkan tinggi limas: '))
-    volumelimas = round((1/3)*tinggi*(panjang**2), ndigits=1)
+    volumelimas = (1/3)*tinggi*(panjang**2)
     print('Volume limas tersebut adalah ', volumelimas)
 elif pilihan == 2:
     jari_jari = int(input('Masukkan panjang jari-jari bola: '))
@@ -22,22 +22,20 @@ elif pilihan == 3:
         sisialasprisma = int(input('Masukkan panjang sisi alas prisma: '))
         tinggialasprisma = int(input('Masukkan tinggi alas prisma: '))
         tinggiprismasegitiga = int(input('Masukkan tinggi prisma segitiga: '))
-        volumeprisma = round((1/2)*sisialasprisma *
-                             tinggialasprisma*tinggiprismasegitiga, ndigits=1)
+        volumeprisma = (1/2)*sisialasprisma * \
+            tinggialasprisma*tinggiprismasegitiga
         print('Volume prisma segitiga tersebut adalah ', volumeprisma)
     elif pilihan2 == 2:
         sisialasprisma = int(input('Masukkan panjang sisi alas prisma: '))
         tinggialasprisma = int(input('Masukkan tinggi alas prisma: '))
         tinggiprismasegitiga = int(input('Masukkan tinggi prisma segitiga: '))
-        volumeprisma = round(sisialasprisma*tinggialasprisma *
-                             tinggiprismasegitiga, ndigits=1)
+        volumeprisma = sisialasprisma*tinggialasprisma * tinggiprismasegitiga
         print('Volume prisma segitiga tersebut adalah ', volumeprisma)
     elif pilihan2 == 3:
         sisialasprisma = int(input('Masukkan panjang sisi alas prisma: '))
         tinggialasprisma = int(input('Masukkan tinggi alas prisma: '))
         tinggiprismasegitiga = int(input('Masukkan tinggi prisma segitiga: '))
-        volumeprisma = round(2.5*sisialasprisma *
-                             tinggialasprisma*tinggiprismasegitiga, ndigits=1)
+        volumeprisma = 2.5*sisialasprisma * tinggialasprisma*tinggiprismasegitiga
         print('Volume prisma segitiga tersebut adalah ', volumeprisma)
     else:
         print('Prisma yang Anda cari belum tersedia di Kalkulator ini')
